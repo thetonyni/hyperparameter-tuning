@@ -1,0 +1,102 @@
+
+@article{Bergstra2012,
+abstract = {Grid search and manual search are the most widely used strategies for hyper-parameter optimization. This paper shows empirically and theoretically that randomly chosen trials are more efficient for hyper-parameter optimization than trials on a grid. Empirical evidence comes from a comparison with a large previous study that used grid search and manual search to configure neural networks and deep belief networks. Compared with neural networks configured by a pure grid search, we find that random search over the same domain is able to find models that are as good or better within a small fraction of the computation time. Granting random search the same computational budget, random search finds better models by effectively searching a larger, less promising configuration space. Compared with deep belief networks configured by a thoughtful combination of manual search and grid search, purely random search over the same 32-dimensional configuration space found statistically equal performance on four of seven data sets, and superior performance on one of seven. A Gaussian process analysis of the function from hyper-parameters to validation set performance reveals that for most data sets only a few of the hyper-parameters really matter, but that different hyper-parameters are important on different data sets. This phenomenon makes grid search a poor choice for configuring algorithms for new data sets. Our analysis casts some light on why recent "High Throughput" methods achieve surprising success-they appear to search through a large number of hyper-parameters because most hyper-parameters do not matter much. We anticipate that growing interest in large hierarchical models will place an increasing burden on techniques for hyper-parameter optimization; this work shows that random search is a natural baseline against which to judge progress in the development of adaptive (sequential) hyper-parameter optimization algorithms. {\textcopyright} 2012 James Bergstra and Yoshua Bengio.},
+author = {Bergstra, James and Bengio, Yoshua},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/random search for hyperparamter optimization.pdf:pdf},
+issn = {15324435},
+journal = {Journal of Machine Learning Research},
+keywords = {Deep learning,Global optimization,Model selection,Neural networks,Response surface modeling},
+pages = {281--305},
+title = {{Random search for hyper-parameter optimization}},
+volume = {13},
+year = {2012}
+}
+
+@book{Hutter2014,
+author = {Hutter, Frank and Kotthoff, Lars and Vanschoren, Joaquin},
+booktitle = {Studies in Computational Intelligence},
+doi = {10.1007/978-3-319-00960-5_6},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/automated machine learning.pdf:pdf},
+isbn = {9783319009599},
+issn = {1860949X},
+pages = {35--62},
+title = {{Automated Machine Learning: Methods, Systems, Challenges}},
+volume = {498},
+year = {2014}
+}
+
+@article{Picco2016,
+abstract = {Clustering is one of the main methods for getting insight on the underlying nature and structure of data. The purpose of clustering is organizing a set of data into clusters, such that the elements in each cluster are similar and different from those in other clusters. One of the most used clustering algorithms presently is K-means, because of its easiness for interpreting its results and implementation. The solution to the K-means clustering problem is NP-hard, which justifies the use of heuristic methods for its solution. To date, a large number of improvements to the algorithm have been proposed, ofwhich the most relevant were selected using systematic review methodology. As a result, 1125 documents on improvements were retrieved, and 79 were left after applying inclusion and exclusion criteria. The improvements selected were classified and summarized according to the algorithm steps: initializa- tion, classification, centroid calculation, and convergence. It is remarkable that some of the most successful algorithm variants were found. Some articles on trends in recent years were included, concerning K-means improvements and its use in other areas. Finally, it is considered that the main improvements may inspire the development of new heuristics for K-means or other clustering algorithms. Keywords:},
+author = {Picco, Sergio and Villegas, Liliana and Tonelli, Franco and Merlo, Mario and Rigau, Javier and Diaz, Dario and Masuelli, Martin},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/the k-means algorithm evolution.pdf:pdf},
+journal = {IntechOpen},
+title = {{The K-Means Algorithm Evolution}},
+url = {https://www.intechopen.com/books/advanced-biometric-technologies/liveness-detection-in-biometrics},
+year = {2016}
+}
+
+@article{Probst2019,
+abstract = {The random forest (RF) algorithm has several hyperparameters that have to be set by the user, for example, the number of observations drawn randomly for each tree and whether they are drawn with or without replacement, the number of variables drawn randomly for each split, the splitting rule, the minimum number of samples that a node must contain, and the number of trees. In this paper, we first provide a literature review on the parameters' influence on the prediction performance and on variable importance measures. It is well known that in most cases RF works reasonably well with the default values of the hyperparameters specified in software packages. Nevertheless, tuning the hyperparameters can improve the performance of RF. In the second part of this paper, after a presenting brief overview of tuning strategies, we demonstrate the application of one of the most established tuning strategies, model-based optimization (MBO). To make it easier to use, we provide the tuneRanger R package that tunes RF with MBO automatically. In a benchmark study on several datasets, we compare the prediction performance and runtime of tuneRanger with other tuning implementations in R and RF with default hyperparameters. This article is categorized under: Algorithmic Development {\textgreater} Biological Data Mining Algorithmic Development {\textgreater} Statistics Algorithmic Development {\textgreater} Hierarchies and Trees Technologies {\textgreater} Machine Learning.},
+archivePrefix = {arXiv},
+arxivId = {1804.03515},
+author = {Probst, Philipp and Wright, Marvin N. and Boulesteix, Anne Laure},
+doi = {10.1002/widm.1301},
+eprint = {1804.03515},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/hyperparameter and tuning strategies for random forest.pdf:pdf},
+issn = {19424795},
+journal = {Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+keywords = {ensemble,literature review,out-of-bag,performance evaluation,ranger,sequential model-based optimization,tuning parameter},
+number = {3},
+pages = {1--15},
+title = {{Hyperparameters and tuning strategies for random forest}},
+volume = {9},
+year = {2019}
+}
+
+@article{Reif2012,
+abstract = {The performance of most of the classification algorithms on a particular dataset is highly dependent on the learning parameters used for training them. Different approaches like grid search or genetic algorithms are frequently employed to find suitable parameter values for a given dataset. Grid search has the advantage of finding more accurate solutions in general at the cost of higher computation time. Genetic algorithms, on the other hand, are able to find good solutions in less time, but the accuracy of these solutions is usually lower than those of grid search. This paper uses ideas from meta-learning and case-based reasoning to provide good starting points to the genetic algorithm. The presented approach reaches the accuracy of grid search at a significantly lower computational cost. We performed extensive experiments for optimizing learning parameters of the Support Vector Machine (SVM) and the Random Forest classifiers on over 100 datasets from UCI and StatLib repositories. For the SVM classifier, grid search achieved an average accuracy of 81 {\%} and took six hours for training, whereas the standard genetic algorithm obtained 74 {\%} accuracy in close to one hour of training. Our method was able to achieve an average accuracy of 81 {\%} in only about 45 minutes. Similar results were achieved for the Random Forest classifier. Besides a standard genetic algorithm, we also compared the presented method with three state-of-the-art optimization algorithms: Generating Set Search, Dividing Rectangles, and the Covariance Matrix Adaptation Evolution Strategy. Experimental results show that our method achieved the highest average accuracy for both classifiers. Our approach can be particularly useful when training classifiers on large datasets where grid search is not feasible. {\textcopyright} 2012 The Author(s).},
+author = {Reif, Matthias and Shafait, Faisal and Dengel, Andreas},
+doi = {10.1007/s10994-012-5286-7},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/meta-learning for evolutionary parameter optimization of classifiers.pdf:pdf},
+issn = {08856125},
+journal = {Machine Learning},
+keywords = {Feature selection,Genetic algorithm,Meta-learning,Parameter optimization},
+number = {3},
+pages = {357--380},
+title = {{Meta-learning for evolutionary parameter optimization of classifiers}},
+volume = {87},
+year = {2012}
+}
+
+
+@article{Vanschoren2018,
+abstract = {Meta-learning, or learning to learn, is the science of systematically observing how different machine learning approaches perform on a wide range of learning tasks, and then learning from this experience, or meta-data, to learn new tasks much faster than otherwise possible. Not only does this dramatically speed up and improve the design of machine learning pipelines or neural architectures, it also allows us to replace hand-engineered algorithms with novel approaches learned in a data-driven way. In this chapter, we provide an overview of the state of the art in this fascinating and continuously evolving field.},
+archivePrefix = {arXiv},
+arxivId = {1810.03548},
+author = {Vanschoren, Joaquin},
+eprint = {1810.03548},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/meta-learning{\_}a survey.pdf:pdf},
+journal = {arXiv},
+pages = {1--29},
+title = {{Meta-Learning: A Survey}},
+year = {2018}
+}
+
+@article{Yang2020,
+abstract = {Machine learning algorithms have been used widely in various applications and areas. To fit a machine learning model into different problems, its hyper-parameters must be tuned. Selecting the best hyper-parameter configuration for machine learning models has a direct impact on the model's performance. It often requires deep knowledge of machine learning algorithms and appropriate hyper-parameter optimization techniques. Although several automatic optimization techniques exist, they have different strengths and drawbacks when applied to different types of problems. In this paper, optimizing the hyper-parameters of common machine learning models is studied. We introduce several state-of-the-art optimization techniques and discuss how to apply them to machine learning algorithms. Many available libraries and frameworks developed for hyper-parameter optimization problems are provided, and some open challenges of hyper-parameter optimization research are also discussed in this paper. Moreover, experiments are conducted on benchmark datasets to compare the performance of different optimization methods and provide practical examples of hyper-parameter optimization. This survey paper will help industrial users, data analysts, and researchers to better develop machine learning models by identifying the proper hyper-parameter configurations effectively.},
+archivePrefix = {arXiv},
+arxivId = {2007.15745},
+author = {Yang, Li and Shami, Abdallah},
+doi = {10.1016/j.neucom.2020.07.061},
+eprint = {2007.15745},
+file = {:C$\backslash$:/Users/theto/Documents/git/STAT495F20-project-Ni/report/literature/on{\_}hyperparameter{\_}optimization{\_}of{\_}ml{\_}algorithms{\_}theory{\_}and{\_}practice.pdf:pdf},
+issn = {18728286},
+journal = {Neurocomputing},
+keywords = {Bayesian optimization,Genetic algorithm,Grid search,Hyper-parameter optimization,Machine learning,Particle swarm optimization},
+pages = {295--316},
+publisher = {Elsevier B.V.},
+title = {{On hyperparameter optimization of machine learning algorithms: Theory and practice}},
+url = {https://doi.org/10.1016/j.neucom.2020.07.061},
+volume = {415},
+year = {2020}
+}
